@@ -1,0 +1,122 @@
+.header {
+  &_con {
+    width: 82.8%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1.7rem;
+    padding-bottom: 3.1rem;
+    @media screen and (max-width: 900px) {
+      margin-top: 2.1rem;
+    }
+    &_list {
+      display: flex;
+      &_li {
+        list-style: none;
+        &:not(:last-child) {
+          margin-right: 3.2rem;
+        }
+        &_link {
+          text-decoration: none;
+          font-size: 1.4rem;
+          color: $Grayish-Blue;
+          font-family: $Public;
+          font-weight: 500;
+          padding-bottom: 3.1rem;
+          transition: all 0.1s ease-in-out;
+          &:hover {
+            border-bottom: 3px solid;
+            border-image-slice: 1;
+            border-bottom-width: 3px;
+            border-image-source: linear-gradient(
+              to right,
+              $Lime-Green,
+              $Bright-Cyan
+            );
+          }
+        }
+      }
+      @media screen and (max-width: 900px) {
+        display: none;
+        visibility: hidden;
+      }
+    }
+    &_links {
+      text-decoration: none;
+      font-size: 1.4rem;
+      font-family: $Public;
+      font-weight: 700;
+      padding: 1.5rem 3.57rem;
+      color: $White;
+      border-radius: 2.7rem;
+      background-image: linear-gradient(to right, $Lime-Green, $Bright-Cyan);
+      transition: all 0.2s ease-in-out;
+      &:hover {
+        background-image: linear-gradient(
+          to right,
+          rgba(49, 211, 92, 0.5),
+          rgba(43, 183, 218, 0.5)
+        );
+      }
+      @media screen and (max-width: 900px) {
+        display: none;
+        visibility: hidden;
+      }
+    }
+    &_menu {
+      display: none;
+      visibility: hidden;
+      overflow: hidden;
+      @media screen and (max-width: 900px) {
+        display: inline-block;
+        visibility: visible;
+      }
+      &_input {
+        display: none;
+        visibility: hidden;
+      }
+      &_input:checked ~ &_sec {
+        transform: translateX(0%);
+      }
+      &_input:checked ~ &_menu {
+        display: none;
+      }
+      &_sec {
+        transition: all 0.5s ease-in-out;
+        position: fixed;
+        top: 10rem;
+        width: 82.3%;
+        z-index: 2;
+        left: 7%;
+        width: 86%;
+        right: 7%;
+        text-align: center;
+        padding-top: 3.6rem;
+        padding-bottom: 3.6rem;
+        background-color: rgb(255, 255, 255);
+        transform: translateX(200%);
+        border-radius: 10px;
+        box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+          0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+          0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+          0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
+        &_list {
+          &_li {
+            list-style: none;
+            &:not(:last-child) {
+              margin-bottom: 3rem;
+            }
+            &_link {
+              text-decoration: none;
+              font-size: 1.5rem;
+              color: $Dark-Blue;
+              font-family: $Public;
+              font-weight: 500;
+            }
+          }
+        }
+      }
+    }
+  }
+}

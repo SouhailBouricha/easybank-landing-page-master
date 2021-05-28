@@ -1,0 +1,132 @@
+.main {
+  &_hero {
+    &_con {
+      width: 91.29%;
+      margin-left: auto;
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+      overflow: hidden;
+      @media screen and (max-width: 900px) {
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+      }
+      &_left {
+        margin-top: 18.3rem;
+        width: 30%;
+
+        @media screen and (max-width: 1489px) {
+          margin-top: 15rem;
+        }
+        @media screen and (max-width: 1348px) {
+          margin-top: 12rem;
+        }
+        @media screen and (max-width: 1300px) {
+          margin-top: 10rem;
+        }
+        @media screen and (max-width: 1226px) {
+          margin-top: 7rem;
+        }
+        @media screen and (max-width: 970px) {
+          width: 35%;
+        }
+        @media screen and (max-width: 900px) {
+          margin-top: 0rem;
+          width: 82.8%;
+          margin: auto;
+          text-align: center;
+        }
+        &_head {
+          font-size: 4rem;
+          font-family: $Public;
+          font-weight: 500;
+          color: $Dark-Blue;
+          margin-bottom: 4.3rem;
+          @media screen and (max-width: 1099px) {
+            font-size: 3.5rem;
+          }
+          @media screen and (max-width: 900px) {
+            width: 100%;
+            font-size: 3rem;
+          }
+        }
+        &_para {
+          font-size: 1.6rem;
+          font-family: $Public;
+          color: $Grayish-Blue;
+          line-height: 1.5;
+          font-weight: 500;
+          margin-bottom: 4.3rem;
+        }
+        &_link {
+          text-decoration: none;
+          display: inline-block;
+          font-size: 1.4rem;
+          font-family: $Public;
+          font-weight: 700;
+          padding: 1.5rem 3.57rem;
+          color: $White;
+          border-radius: 2.7rem;
+          background-image: linear-gradient(
+            to right,
+            $Lime-Green,
+            $Bright-Cyan
+          );
+          transition: all 0.2s ease-in-out;
+          &:hover {
+            background-image: linear-gradient(
+              to right,
+              rgba(49, 211, 92, 0.5),
+              rgba(43, 183, 218, 0.5)
+            );
+          }
+          @media screen and (max-width: 900px) {
+            margin-bottom: 16.3rem;
+          }
+        }
+      }
+      &_right {
+        width: 70%;
+        transform: translate(21%, -25%);
+        @media screen and (max-width: 970px) {
+          width: 65%;
+        }
+        @media screen and (max-width: 900px) {
+          transform: translate(0%, 0%);
+          width: 100%;
+        }
+        &_img {
+          width: 100%;
+
+          &_big {
+            width: 100%;
+          }
+        }
+      }
+      &_pos {
+        position: absolute;
+        right: -7.5%;
+        top: -12%;
+        width: 50%;
+        @media screen and (max-width: 900px) {
+          right: 50%;
+          width: 80%;
+          top: 20%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+        @media screen and (max-width: 580px) {
+          top: 15%;
+        }
+        @media screen and (max-width: 580px) {
+          width: 90%;
+        }
+        @media screen and (max-width: 317px) {
+          top: 12%;
+        }
+      }
+    }
+  }
+}

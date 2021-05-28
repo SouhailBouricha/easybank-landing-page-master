@@ -1,0 +1,130 @@
+.footer {
+  background-color: $Dark-Blue;
+  &_con {
+    padding-top: 4.8rem;
+    padding-bottom: 5.4rem;
+    width: 82.8%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    @media screen and (max-width: 900px) {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    &_partr1 {
+      display: flex;
+      flex-direction: row;
+      @media screen and (max-width: 900px) {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+      &_loico {
+        margin-right: 13rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        @media screen and (max-width: 1050px) {
+          margin-right: 10rem;
+        }
+        @media screen and (max-width: 980px) {
+          margin-right: 7rem;
+        }
+        @media screen and (max-width: 900px) {
+          margin-right: 0rem;
+        }
+        &_logo {
+          @media screen and (max-width: 900px) {
+            margin-bottom: 3rem;
+          }
+        }
+        &_icons {
+          img {
+            &:not(:last-child) {
+              margin-right: 1.2rem;
+            }
+            @media screen and (max-width: 900px) {
+              margin-bottom: 3.8rem;
+            }
+          }
+        }
+      }
+      &_ul1 {
+        margin-right: 12.7rem;
+        @media screen and (max-width: 1050px) {
+          margin-right: 10rem;
+        }
+        @media screen and (max-width: 980px) {
+          margin-right: 7rem;
+        }
+        @media screen and (max-width: 900px) {
+          margin-right: 0rem;
+          margin-bottom: 2.5rem;
+        }
+      }
+      &_ul2 {
+        @media screen and (max-width: 900px) {
+          margin-bottom: 4.1rem;
+        }
+      }
+      &_ul1,
+      &_ul2 {
+        &_li {
+          list-style: none;
+          &:not(:last-child) {
+            margin-bottom: 2.5rem;
+          }
+          &_link {
+            text-decoration: none;
+            font-size: 1.5rem;
+            color: $White;
+            font-family: $Public;
+            font-weight: 300;
+          }
+        }
+      }
+    }
+    &_part2 {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-end;
+      text-align: right;
+      @media screen and (max-width: 900px) {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+      &_link {
+        text-decoration: none;
+        display: inline-block;
+        font-size: 1.4rem;
+        font-family: $Public;
+        font-weight: 700;
+        padding: 1.5rem 3.57rem;
+        color: $White;
+        border-radius: 2.7rem;
+        background-image: linear-gradient(to right, $Lime-Green, $Bright-Cyan);
+        transition: all 0.2s ease-in-out;
+        &:hover {
+          background-image: linear-gradient(
+            to right,
+            rgba(49, 211, 92, 0.5),
+            rgba(43, 183, 218, 0.5)
+          );
+        }
+        @media screen and (max-width: 900px) {
+          margin-bottom: 3.1rem;
+        }
+      }
+      &_copy {
+        font-size: 1.5rem;
+        font-family: $Public;
+        font-weight: 500;
+        color: $Grayish-Blue;
+      }
+    }
+  }
+}

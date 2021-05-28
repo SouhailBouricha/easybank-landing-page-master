@@ -1,0 +1,70 @@
+.main {
+  &_benefit {
+    &_con {
+      width: 82.8%;
+      margin: auto;
+      padding-bottom: 20rem;
+      @media screen and (max-width: 900px) {
+        text-align: center;
+      }
+      &_top {
+        margin-bottom: 8.1rem;
+        &_head {
+          font-size: 3rem;
+          font-family: $Public;
+          font-weight: 400;
+          color: $Dark-Blue;
+          margin-bottom: 4.1rem;
+        }
+        &_para {
+          font-size: 1.5rem;
+          font-family: $Public;
+          font-weight: 500;
+          color: $Grayish-Blue;
+          line-height: 1.4;
+        }
+      }
+      &_carts {
+        display: flex;
+        @media screen and (max-width: 1200px) {
+          justify-content: space-between;
+          text-align: center;
+        }
+        @media screen and (max-width: 900px) {
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+        }
+        &_cart {
+          &_icon {
+            margin-bottom: 4.4rem;
+          }
+          &_head {
+            font-size: 2rem;
+            font-family: $Public;
+            font-weight: 500;
+            color: $Dark-Blue;
+            margin-bottom: 3.7rem;
+          }
+          &_para {
+            font-size: 1.4rem;
+            width: 60%;
+            font-family: $Public;
+            line-height: 1.7;
+            font-weight: 500;
+            color: $Grayish-Blue;
+            @media screen and (max-width: 1200px) {
+              margin-left: auto;
+              width: 80%;
+              margin-right: auto;
+            }
+            @media screen and (max-width: 900px) {
+              margin-bottom: 4rem;
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
